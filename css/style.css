@@ -1,0 +1,59 @@
+body{
+    background-color: #F7ECDE;    
+
+}
+.home{
+
+height: 100vh;
+}
+.home h1{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    color: #352e28;
+    isolation: isolate;
+   
+  
+}
+
+.home h1::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 12%;
+    left: 40%;
+    bottom: 50px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+h1:hover::after{
+    height: 25%;
+}
+h2{
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 200;
+    font-size: 25px;
+   
+}
+.submitbtn{
+    background-color: #d1512d;
+    color: white;
+    margin: auto;
+
+}
+.submitbtn:hover{
+background-color: #bb4120;
+color: white;
+}
+.visitbtn{
+    background-color: #9eb23b;
+}
+.visitbtn:hover{
+    background-color: #8a9e23;
+}
+.deletebtn{
+    background-color: #eb1d36;
+}
+.deletebtn:hover{
+    background-color: #d30820;
+}

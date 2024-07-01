@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="home">
+        <div class=" container">
+            <div>
+                <h1 class="text-center py-5 position-relative  ">Bookmarker</h1>
+            </div>
+           
+            <h2 class="text-center"><i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <form>
+                <div class="my-3">
+                    <label for="userName" class="fw-bold my-2 mx-2"><i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name
+                    </label>
+                    <input type="text" id="userName" class=" form-control" placeholder="Bookmark Name">
+
+                </div>
+                <div class="my-3" id="validbtn">
+                    <label for="urlName" class="fw-bold my-2 mx-2"> <i class="fa-solid fa-link pe-2"></i> Site
+                        URL</label>
+                    <input type="text" id="urlName" class=" form-control" placeholder="Website URL Ex:www.facebook.com">
+                   
+                    
+
+                </div>
+               <button type="button" onclick="addsite()" class="btn submitbtn px-5   my-3">submit</button>
+            </form>
+           
+            
+
+            <table class="table">
+                <thead>
+                    <td class="fw-bold col-lg-3 text-center">
+                        Index
+                    </td>
+                    <td class="fw-bold col-lg-4 text-center ">
+                        Website Name
+                    </td>
+                    <td class="fw-bold col-lg-3 text-center">Visit</td>
+                    <td class="fw-bold col-lg-3 text-center">Delete</td>
+                </thead>
+                <tbody id="myData">
+                 
+
+                </tbody>
+            </table>
+
+
+
+
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
